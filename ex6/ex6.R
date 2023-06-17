@@ -22,4 +22,4 @@ frac = hits/(exp2-exp1+1)
 #3
 desvio = abs(prob-frac)
 
-#
+#0,087
