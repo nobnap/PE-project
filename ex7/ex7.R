@@ -1,9 +1,12 @@
 set.seed(1840)
 
-population <- replicate(2542, rnorm(10, mean = 0, sd = 1))
-population <- t(population)
+num_dimensions <- 10
+num_samples <- 2542
+prob <- 0.22
 
-quadrados <- apply(population, 1, function(row) sum(row^2))
+population <- matrix(rnorm(num_samples * num_dimensions), nrow = num_samples, byrow=TRUE)
+
+quadrados <- apply(population, 1, function(x) sum(x^2))
 
 quantil <- quantile(quadrados, probs=0.22, type=2)
 teo <- qchisq(0.22, 10)
