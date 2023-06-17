@@ -19,7 +19,7 @@ df <- data.frame(
 ggplot(df, aes(x = Values, y = Quantiles, color = Population)) +
   geom_point() +
   geom_abline(slope = 1, intercept = 0, color = "green") +
-  labs(x = "Sorted Values", y = "Probability Quantiles", title = "Cauchy vs Normal Population") +
+  labs(x = "Sorted Values (Cauchy Population)", y = "Probability Quantiles", title = "Cauchy vs Normal Population Quantiles") +
   scale_color_manual(values = c("blue", "red")) +
   theme_minimal() +
   theme(legend.position = "bottom", plot.title = element_text(hjust = 0.5))
