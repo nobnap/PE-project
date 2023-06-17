@@ -12,4 +12,4 @@ quantil <- quantile(quadrados, probs=0.22, type=2)
 teo <- qchisq(0.22, 10)
 
 teo-quantil
-#result: 0.0581
+#result: 0,0581
