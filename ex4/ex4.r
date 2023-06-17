@@ -25,3 +25,5 @@ absolute_deviation <- abs(average_events_per_subinterval - expected_events_per_s
 
 # Round the deviation to 4 decimal places
 rounded_deviation <- round(absolute_deviation, 4)
+
+# R: 0.0867
